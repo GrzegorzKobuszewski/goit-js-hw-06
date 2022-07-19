@@ -35,6 +35,7 @@ newGallery.style.flexDirection = "column-reverse";
 newGallery.style.alignItems = "baseline";
 newGallery.style.justifyContent = "center";
 
-newGalleryItem.style.borderRadius = "20px";
+newGalleryItem.classList.add("newGallery");
+newGalleryItem.style.borderRadius = `${20}px`;
 newGalleryItem.style.transition = "1000ms linear";
 newGalleryItem.style.hover = "cursor: pointer; width: 360";
