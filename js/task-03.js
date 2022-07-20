@@ -33,6 +33,7 @@ newGallery.style.flexDirection = "column-reverse";
 newGallery.style.alignItems = "baseline";
 newGallery.style.justifyContent = "center";
 
+const newGalleryLi = document.querySelectorAll("ul.gallery>li");
 const newGalleryPicture = document.querySelectorAll("ul.gallery>li.picture>img");
 
 newGalleryPicture.forEach(e => {
@@ -40,6 +41,23 @@ newGalleryPicture.forEach(e => {
   e.setAttribute("alt", `${e.getAttribute("alt")}, Zdjęcie nowej galerii`);
   e.classList.add("newGalleryPicture");
   e.style.borderRadius = "30px";
-  e.style.transition = "1000ms linear";
-  e.style.hover = "cursor: pointer; width: 360px";
 });
+
+
+/*
+
+const pictureEfektWow = newGalleryPicture.forEach(e => {
+  e.style.transition = "1000ms linear";
+  e.style.cursor = "pointer";
+  e.style.width = "360px";
+});
+
+const pictureEfektNone = newGalleryPicture.forEach(e => {
+  e.style.transition = "1000ms linear";
+  e.style.width = "300px";
+});
+
+newGalleryPicture.addEventListener("mouseenter", pictureEfektWow);
+newGalleryPicture.addEventListener("mauseleave", pictureEfektNone);
+
+*/
