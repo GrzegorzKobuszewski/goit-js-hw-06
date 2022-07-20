@@ -23,3 +23,21 @@ button {
   cursor: pointer;
 }
 
+/* 
+
+img {
+border-radius: 50px;
+max-width: 300px;
+transition: max-width 1000ms linear;
+}
+
+img:hoover {
+max-width: 360px;
+cursor: pointer;
+}
+
+.gallery {
+ 
+} 
+
+*/

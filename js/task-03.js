@@ -25,8 +25,6 @@ const newGalleryImages = images
 
 console.log(newGalleryImages);
 
-const newGalleryItem = document.querySelectorAll("ul.gallery>li.picture");
-
 newGallery.style.listStyle = "none";
 newGallery.style.padding = "0px";
 newGallery.style.gap = "20px";
@@ -35,7 +33,13 @@ newGallery.style.flexDirection = "column-reverse";
 newGallery.style.alignItems = "baseline";
 newGallery.style.justifyContent = "center";
 
-newGalleryItem.classList.add("newGallery");
-newGalleryItem.style.borderRadius = `${20}px`;
-newGalleryItem.style.transition = "1000ms linear";
-newGalleryItem.style.hover = "cursor: pointer; width: 360";
+const newGalleryPicture = document.querySelectorAll("ul.gallery>li.picture>img");
+
+newGalleryPicture.forEach(e => {
+  e.setAttribute("width", "300px");
+  e.setAttribute("alt", `${e.getAttribute("alt")}, Zdjęcie nowej galerii`);
+  e.classList.add("newGalleryPicture");
+  e.style.borderRadius = "30px";
+  e.style.transition = "1000ms linear";
+  e.style.hover = "cursor: pointer; width: 360px";
+});
