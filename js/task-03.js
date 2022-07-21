@@ -41,23 +41,27 @@ newGalleryPicture.forEach(e => {
   e.setAttribute("alt", `${e.getAttribute("alt")}, Zdjęcie nowej galerii`);
   e.classList.add("newGalleryPicture");
   e.style.borderRadius = "30px";
+  
 });
 
 
-/*
+
 
 const pictureEfektWow = newGalleryPicture.forEach(e => {
   e.style.transition = "1000ms linear";
   e.style.cursor = "pointer";
-  e.style.width = "360px";
+  e.style.transform = "scale(1.1)";
+  
 });
 
 const pictureEfektNone = newGalleryPicture.forEach(e => {
   e.style.transition = "1000ms linear";
-  e.style.width = "300px";
+  e.style.transform = "scale(1.0)";
 });
 
 newGalleryPicture.addEventListener("mouseenter", pictureEfektWow);
 newGalleryPicture.addEventListener("mauseleave", pictureEfektNone);
 
-*/
+
+
+
